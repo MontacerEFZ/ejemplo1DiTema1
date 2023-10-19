@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0AB07E2AE12A44003F3FC4 /* mostrarDatosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0AB07D2AE12A44003F3FC4 /* mostrarDatosController.swift */; };
 		1B4712EE2AC575A70052D751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4712ED2AC575A70052D751 /* AppDelegate.swift */; };
 		1B4712F02AC575A70052D751 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4712EF2AC575A70052D751 /* SceneDelegate.swift */; };
 		1B4712F22AC575A70052D751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4712F12AC575A70052D751 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		1B4712FA2AC575A80052D751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4712F82AC575A80052D751 /* LaunchScreen.storyboard */; };
 		1B4713052AC575A80052D751 /* ejemplo1DiTema1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4713042AC575A80052D751 /* ejemplo1DiTema1Tests.swift */; };
 		1B4713102AC575A80052D751 /* ejemplo1DiTema1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47130F2AC575A80052D751 /* ejemplo1DiTema1UITests.swift */; };
+		1B4713262AC579430052D751 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4713252AC579430052D751 /* Usuario.swift */; };
+		1B47132F2AC57DD10052D751 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 1B47132E2AC57DD10052D751 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B0AB07D2AE12A44003F3FC4 /* mostrarDatosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mostrarDatosController.swift; sourceTree = "<group>"; };
 		1B4712EA2AC575A70052D751 /* ejemplo1DiTema1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ejemplo1DiTema1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4712ED2AC575A70052D751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B4712EF2AC575A70052D751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 		1B47130B2AC575A80052D751 /* ejemplo1DiTema1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ejemplo1DiTema1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B47130F2AC575A80052D751 /* ejemplo1DiTema1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ejemplo1DiTema1UITests.swift; sourceTree = "<group>"; };
 		1B4713112AC575A80052D751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B4713252AC579430052D751 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B47132F2AC57DD10052D751 /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,7 @@
 		1B4712EC2AC575A70052D751 /* ejemplo1DiTema1 */ = {
 			isa = PBXGroup;
 			children = (
+				1B4713242AC578E10052D751 /* modelos */,
 				1B4712ED2AC575A70052D751 /* AppDelegate.swift */,
 				1B4712EF2AC575A70052D751 /* SceneDelegate.swift */,
 				1B4712F12AC575A70052D751 /* ViewController.swift */,
@@ -106,6 +113,7 @@
 				1B4712F62AC575A80052D751 /* Assets.xcassets */,
 				1B4712F82AC575A80052D751 /* LaunchScreen.storyboard */,
 				1B4712FB2AC575A80052D751 /* Info.plist */,
+				1B0AB07D2AE12A44003F3FC4 /* mostrarDatosController.swift */,
 			);
 			path = ejemplo1DiTema1;
 			sourceTree = "<group>";
@@ -128,6 +136,14 @@
 			path = ejemplo1DiTema1UITests;
 			sourceTree = "<group>";
 		};
+		1B4713242AC578E10052D751 /* modelos */ = {
+			isa = PBXGroup;
+			children = (
+				1B4713252AC579430052D751 /* Usuario.swift */,
+			);
+			name = modelos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +160,9 @@
 			dependencies = (
 			);
 			name = ejemplo1DiTema1;
+			packageProductDependencies = (
+				1B47132E2AC57DD10052D751 /* Toast */,
+			);
 			productName = ejemplo1DiTema1;
 			productReference = 1B4712EA2AC575A70052D751 /* ejemplo1DiTema1.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 1B4712E12AC575A70052D751;
+			packageReferences = (
+				1B47132D2AC57DD10052D751 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 1B4712EB2AC575A70052D751 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0AB07E2AE12A44003F3FC4 /* mostrarDatosController.swift in Sources */,
+				1B4713262AC579430052D751 /* Usuario.swift in Sources */,
 				1B4712F22AC575A70052D751 /* ViewController.swift in Sources */,
 				1B4712EE2AC575A70052D751 /* AppDelegate.swift in Sources */,
 				1B4712F02AC575A70052D751 /* SceneDelegate.swift in Sources */,
@@ -587,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B47132D2AC57DD10052D751 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B47132E2AC57DD10052D751 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B47132D2AC57DD10052D751 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B4712E22AC575A70052D751 /* Project object */;
 }
